@@ -37,17 +37,6 @@
     </li>
   {% endif %}
 {% endunless %}
-{% unless excludettl == 'y' %}
-  {% if include.active == 'ttl' %}
-    <li class="active">
-      <a href="#">TTL</a>
-    </li>
-  {% else %}
-    <li>
-      <a href="{{include.type}}-{{include.id}}.ttl.html">TTL</a>
-    </li>
-  {% endif %}
-{% endunless %}
 {% if  site.data.resources[resource_].['history'] %}
   {% if include.active == 'history' %}
     <li class="active">
