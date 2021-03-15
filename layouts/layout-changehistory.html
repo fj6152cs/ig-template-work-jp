@@ -1,0 +1,21 @@
+---
+---
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">このページは作成中の内容です。</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='{{[type]}}' id='{{[id]}}' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{type}}: {{[title]}} - 変更履歴</h2>
+  <p>{{[id]}} {{type | downcase}} の変更履歴</p>
+
+  {%include {{[type]}}-{{[id]}}-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

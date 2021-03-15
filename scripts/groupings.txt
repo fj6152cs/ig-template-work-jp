@@ -1,0 +1,76 @@
+<grouping xmlns="http://hl7.org/fhir" id="_dyn_capabilitystatement">
+  <name value="動作:機能ステートメント"/>
+  <description value="次の成果物は、この実装ガイドに準拠するために、さまざまなタイプのシステムに期待される特定の機能を定義しています。この実装ガイドに準拠するシステムは、次の機能ステートメントの1つ以上への準拠を宣言することが期待されています。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_dyn_operationdefinition">
+  <name value="動作:操作の定義"/>
+  <description value="これらは、この実装ガイドに準拠するシステムによってサポート、および(または)呼び出されるカスタム操作です。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_dyn_messagedefinition">
+  <name value="動作:メッセージ定義"/>
+  <description value="これらは、この実装ガイドに準拠するシステムが送受信できるメッセージタイプを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_dyn_searchparameter">
+  <name value="動作:検索パラメータ"/>
+  <description value="これらは、RESTfulサーバーを検索できるプロパティを定義します。また、関連リソースの並べ替えや組み込みにも使用できます。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_str_graphdefinition">
+  <name value="構造:グラフの定義"/>
+  <description value="これらは、グループとして渡すのに役立つ相互に関連するリソースのコレクションを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_str_logicalmodel">
+  <name value="構造:論理モデル"/>
+  <description value="これらは、基盤となるFHIRリソースよりもビジネスに適した用語で、この実装ガイドの対象となるドメインを表すデータモデルを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_str_questionnaire">
+  <name value="構造:アンケート"/>
+  <description value="これらは、この実装ガイドに準拠するシステムがデータをキャプチャまたはエンドユーザーに公開するために使用するフォームを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_str_abstractprofile">
+  <name value="構造:抽象的なプロファイル"/>
+  <description value="これらは、他のプロファイルで使用されるパターンを記述するリソースまたはデータ型のプロファイルですが、直接インスタンス化することはできません。つまり インスタンスは、これらの抽象プロファイルに「基づいて」プロファイルに準拠できますが、抽象プロファイル自体への準拠を宣言しません。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_str_profile">
+  <name value="構造:リソースプロファイル"/>
+  <description value="これらは、この実装ガイドに準拠するシステムのFHIRリソースに対する制約を定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_str_datatype">
+  <name value="構造:データ型プロファイル"/>
+  <description value="これらは、この実装ガイドに準拠するシステムのFHIRデータ型に対する制約を定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_str_extension">
+  <name value="構造:拡張の定義"/>
+  <description value="これらは、この実装ガイドに準拠するシステムのFHIRデータ型に対する拡張を定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_term_valueset">
+  <name value="用語:バリューセット"/>
+  <description value="これらは、この実装ガイドに準拠するシステムで使用されるバリューセットを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_term_codesystem">
+  <name value="用語:コードシステム"/>
+  <description value="これらは、この実装ガイドに準拠するシステムで使用される新しいコードシステムを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_term_namingsystem">
+  <name value="用語:ネーミングシステム"/>
+  <description value="これらは、この実装ガイドに準拠するシステムによって使用される識別子、および(または)コードシステムIDを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_map_structuremap">
+  <name value="用語:構造マップ"/>
+  <description value="これらは、この実装ガイドに準拠するシステムで使用されるデータ構造間で変換するための変換を定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_map_conceptmap">
+  <name value="用語:コンセプトマップ"/>
+  <description value="これらは、この実装ガイドに準拠するシステムによってコード間で変換するための変換を定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_ex_examplescenario">
+  <name value="サンプル:シナリオサンプル"/>
+  <description value="これらは、この実装ガイドでサポートされている1つ以上のワークフローを示す相互に関連するサンプルのグループを定義します。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_ex_example">
+  <name value="サンプル:インスタンスのサンプル"/>
+  <description value="これらは、この実装ガイドに準拠するシステムによって生成および消費されるデータがどのように見えるかを示すインスタンスのサンプルです。"/>
+</grouping>
+<grouping xmlns="http://hl7.org/fhir" id="_other">
+  <name value="その他"/>
+  <description value="これらは、この実装ガイド内で使用されているリソースであり、他のカテゴリのいずれにも当てはまりません。"/>
+</grouping>

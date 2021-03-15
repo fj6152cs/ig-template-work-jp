@@ -1,0 +1,70 @@
+---
+---
+{% include fragment-pagebegin.html %}
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">このページは作成中の内容です。</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='{{[type]}}' id='{{[id]}}' active='content' %}
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: {{site.data.pages[page.path].title}}</h2>
+  <p>
+    <b>概要</b>
+  </p>
+  {%include {{[type]}}-{{[id]}}-summary.xhtml%}
+
+  <p>
+    <b>参照</b>
+  </p>
+  {%include {{[type]}}-{{[id]}}-xref.xhtml%}
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='{{[type]}}' id='{{[id]}}' %}
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  {%include {{[type]}}-{{[id]}}-cld.xhtml%}
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">拡張</h3>
+
+  {%include {{[type]}}-{{[id]}}-expansion.xhtml%}
+
+  <hr/>
+  <p>
+    上記の表示に出てくる可能性のある列の説明:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>FHIRが定義しているいくつかのコードリストは階層構造になっており、各コードにはレベルが割り当てられています。この方式では、いくつかのコードは他のコードの配下にあり、その配下にあるコードも適用されます。</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td>コードの定義ソース(バリューセットが他の場所で定義されたコードである場合)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>コード(リソースインスタンスのコードとして使用される)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>ディスプレイ（<a href="{{site.data.fhir.path}}datatypes.html#Coding">Coding</a>の<i>display</i>要素で使用されます）。表示がない場合、実装者は単にコードを表示するのではなく、概念をアプリケーションにマッピングする必要があります</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>概念の意味の説明</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>コードの使用方法に関するその他の注意事項</td>
+    </tr>
+  </table>
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='{{[type]}}' id='{{[id]}}' %}
+
+  {%include {{[type]}}-{{[id]}}-history.xhtml%}
+
+</div>
+{% include fragment-pageend.html %}
